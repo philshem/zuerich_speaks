@@ -1,7 +1,8 @@
 text mining 100+ years of Zürich referenda and initiatives
 
-data sources:
+main data source:
 https://opendata.swiss/de/dataset/abstimmungsarchiv-des-kantons-zurich
+each vote contains links to machine-readable pdf voting information
 
 full text from pdftotext
 
