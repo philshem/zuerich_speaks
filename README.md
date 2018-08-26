@@ -1,4 +1,4 @@
-## Text mining 100+ years of Zürich's referenda and initiatives
+## Text mining 100+ years of Kanton Zürich's referenda and initiatives
 [TWIST2018 project](http://hack.twist2018.ch/project/15)
 
 ### team
@@ -7,7 +7,8 @@
 + [martin holub](https://twitter.com/holub_martin)
 
 \*Peter has some nice papers with previous research
- + https://statistik.zh.ch/content/dam/justiz_innern/statistik/Publikationen/statistik_info/si_2016_04_abstimmungen_uebersicht_2010_2016.pdf
+
++ https://statistik.zh.ch/content/dam/justiz_innern/statistik/Publikationen/statistik_info/si_2016_04_abstimmungen_uebersicht_2010_2016.pdf
 
 ### main data sources:
  + https://opendata.swiss/de/dataset/abstimmungsarchiv-des-kantons-zurich
