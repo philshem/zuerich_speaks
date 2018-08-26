@@ -25,5 +25,5 @@
 + [vote_mapping.py](https://github.com/philshem/zuerich_speaks/blob/master/vote_mapping.py) (_experimental_) reads the combined text from full_text.csv, and also the metadta from the Kantonal CSV file. It attemps to split the TXT file into multiple elements, one for each ballot measure, using some file-specific some keywords. The code then maps based on the rank of this split array. Output file is [full_text_mapped.csv](https://github.com/philshem/zuerich_speaks/blob/master/full_text_mapped.csv).
 + [sentiment.py](https://github.com/philshem/zuerich_speaks/blob/master/sentiment.py) reads full_text_mapped.csv and calculates the polarity (-1,1), the subjectivity (0,1) and the readability (0,inf). Output file is [full_text_mapped_sentiment.csv](https://github.com/philshem/zuerich_speaks/blob/master/full_text_mapped_sentiment.csv), and the three scores are added as the last 3 columns.
 
-![voting](https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/09/25/20/suffragette.jpg?w500)
+![voting](https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/09/25/20/suffragette.jpg?w600)
 
