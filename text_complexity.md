@@ -119,6 +119,8 @@ def poly_syllable_count(text):
 
 The [following paper](http://www.sfs.uni-tuebingen.de/~dm/papers/Hancke.Vajjala.Meurers-12.pdf) discuss assesing German text readability.
 
+# Readability package
+
 Another option is using this `readability` module that also supports German:
 https://pypi.org/project/readability/
 
