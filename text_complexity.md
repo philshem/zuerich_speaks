@@ -122,6 +122,15 @@ The [following paper](http://www.sfs.uni-tuebingen.de/~dm/papers/Hancke.Vajjala.
 Another option is using this `readability` module that also supports German:
 https://pypi.org/project/readability/
 
+```
+>>> import readability
+>>> text = ('This is an example sentence .\n'
+        'Note that tokens are separated by spaces and sentences by newlines .\n')
+>>> results = readability.getmeasures(text, lang='en')
+>>> print(results['readability grades']['FleschReadingEase'])
+55.95250000000002
+```
+
 # Other Resources
 As a proxy for text complexity, we may want to use sentence length. Check out this [example](https://stackoverflow.com/questions/35900029/average-sentence-length-for-every-text-in-corpus-python3-nltk):
 
