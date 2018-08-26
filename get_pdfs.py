@@ -37,7 +37,7 @@ def main():
 		#	pdf_downloader(url)
 
 	# parallel
-	pool = multiprocessing.Pool(processes=4)
+	pool = multiprocessing.Pool(processes=4) # how much parallelism?
 	pool.map(pdf_downloader, urllist)
 
 def pdf_downloader(url):

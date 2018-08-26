@@ -13,7 +13,7 @@ def main():
 
 	csv_list = []
 
-	csv_list.append(['file_name','abstimmungstag','full_text'])
+	csv_list.append(['file_name','ABSTIMMUNGSTAG','full_text'])
 
 	for f in glob.glob('txt'+os.sep+'*.txt'):
 #	for f in glob.glob('txt'+os.sep+'19430926_Volksabstimmung.txt'):
@@ -26,7 +26,7 @@ def main():
 
 		with open(f,'rb') as t:
 			text = t.read()
-			text = text.replace('\n',' ').replace('\r',' ')
+			text = text.replace('\n',' ').replace('\r',' ').replace('@',' ').replace('|', ' ')
 
 
 			text = text.translate(all_bytes, all_bytes[:32])  
