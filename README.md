@@ -1,4 +1,5 @@
-## text mining 100+ years of Zürich referenda and initiatives
+## Text mining 100+ years of Zürich's referenda and initiatives
+[TWIST2018 project](http://hack.twist2018.ch/project/15)
 
 ### main data sources:
  + https://opendata.swiss/de/dataset/abstimmungsarchiv-des-kantons-zurich
@@ -10,11 +11,11 @@
 
 ### using the code and data
 (mostly python 2.7 or bash)
-+ get_pdfs.py scrapes the URLs from the Kantonal CSV file and saves them locally
-+ convert_pdf_to_txt.sh loops over the PDFs and converts them to TXT with [pdftotext](https://en.wikipedia.org/wiki/Pdftotext)
-+ read_txt.py reads the individual TXT files, cleanups up the text a bit, and writes a CSV file with some keys for joining later (full_text.csv)
-+ vote_mapping.py (_experimental_) reads the combined text from full_text.csv, and also the metadta from the Kantonal CSV file. It attemps to split the TXT file into multiple elements, one for each ballot measure, using some file-specific some keywords. The code then maps based on the rank of this split array. Output file is full_text_mapped.csv.
-+ sentiment.py reads full_text_mapped.csv and calculates the polarity (-1,1), the subjectivity (0,1) and the readability (0,inf). Output file is full_text_mapped_sentiment.csv, and the three scores are added as the last 3 columns.
++ [get_pdfs.py](https://github.com/philshem/zuerich_speaks/blob/master/get_pdfs.py) scrapes the URLs from the Kantonal CSV file and saves them locally. (Actually we got the PDFs from the organizers on a usb stick, because the scraper was getting IP blocked.) Note that the files Bundesamt.pdf are not URL linked in the CSV files.
++ [convert_pdf_to_txt.sh](https://github.com/philshem/zuerich_speaks/blob/master/convert_pdf_to_txt.sh) loops over the PDFs and converts them to TXT with [pdftotext](https://en.wikipedia.org/wiki/Pdftotext).
++ [read_txt.py](https://github.com/philshem/zuerich_speaks/blob/master/read_txt.py) reads the individual TXT files, cleanups up the text a bit, and writes a CSV file with some keys for joining later: [full_text.csv](https://github.com/philshem/zuerich_speaks/blob/master/full_text.csv).
++ [vote_mapping.py](https://github.com/philshem/zuerich_speaks/blob/master/vote_mapping.py) (_experimental_) reads the combined text from full_text.csv, and also the metadta from the Kantonal CSV file. It attemps to split the TXT file into multiple elements, one for each ballot measure, using some file-specific some keywords. The code then maps based on the rank of this split array. Output file is [full_text_mapped.csv](https://github.com/philshem/zuerich_speaks/blob/master/full_text_mapped.csv).
++ [sentiment.py](https://github.com/philshem/zuerich_speaks/blob/master/sentiment.py) reads full_text_mapped.csv and calculates the polarity (-1,1), the subjectivity (0,1) and the readability (0,inf). Output file is [full_text_mapped_sentiment.csv](https://github.com/philshem/zuerich_speaks/blob/master/full_text_mapped_sentiment.csv), and the three scores are added as the last 3 columns.
 
 ### team
 + [philip shemella](https://twitter.com/philshem)
